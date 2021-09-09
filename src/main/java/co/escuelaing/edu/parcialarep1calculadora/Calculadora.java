@@ -1,28 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package co.escuelaing.edu.parcialarep1calculadora;
 
-/**
- *
- * @author Andrew
- */
+
 public class Calculadora {
-    public Double opera(Double valor, String funcion){
-        
+    public Double opera(double numero, String funcion){
+        double fn= 0; 
         if(funcion.contains("sin")){
            
-            fn=Math.sin(fn);
+            fn=Math.sin(numero);
         }
         else if (funcion.contains("cos")){
            
-            fn=Math.cos(fn);
+            fn=Math.cos(numero);
         }
         else if (funcion.contains("tan")){
            
-            fn=Math.tan(fn);
+            fn=Math.tan(numero);
         }
+        return fn;
     }
 }
